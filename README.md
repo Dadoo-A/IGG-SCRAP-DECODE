@@ -1,5 +1,7 @@
 # IGG-SCRAP-DECODE
 
+A python script to quickly have all the links you need from igg to use them on JDownloader.
+
 Install necessary requirements :
 ```python
 pip install -r requirements.txt
