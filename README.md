@@ -1,16 +1,16 @@
 # IGG-SCRAP-DECODE
 
-Installation des modules nécessaire :
+Install necessary requirements :
 ```python
 pip install -r requirements.txt
 ```
 
-Lancement du script :
+How to launch the script :
 ```python
 python.exe IGG_SCRAP_DECODE.py
 ```
 
-## Sources des différents éléments :
+## Sources :
 ### Bypass bluemedia :
 https://greasyfork.org/fr/scripts/423435-igg-games-bluemediafiles-bypass/code
 
