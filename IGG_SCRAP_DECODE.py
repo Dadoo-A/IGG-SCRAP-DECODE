@@ -3,14 +3,14 @@ import pyfiglet
 
 # Fonction pour afficher du texte en ASCII
 def print_ascii_intro(text):
-    # Génération du texte ASCII stylé
+    # Génération du texte ASCII stylisé
     ascii_art = pyfiglet.figlet_format(text, font="starwars")
     print(ascii_art)
 
 def main():
-    # Afficher le texte stylé en ASCII
+    # Afficher le texte stylisé en ASCII
     print_ascii_intro("IGG SCRAP & DECODE")
-    print("by DADOO (et chatgpt ce fou la)")
+    print("by DADOO (and chatgpt)")
     
     # Lancer IGG_SCRAPER.py
     print("Lancement de IGG_SCRAPER.py...")
