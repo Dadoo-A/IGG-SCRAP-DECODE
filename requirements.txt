@@ -4,3 +4,5 @@ pyfiglet
 bs4
 lxml
 pyperclip
+subprocess
+os
