@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import re
 from urllib.parse import urljoin
+import subprocess  # Importer subprocess pour exécuter des commandes système
+import os  # Importer os pour les opérations liées au système de fichiers
 
 def bluemediafiles_decode_key(encoded):
     key = ''
@@ -72,7 +74,16 @@ def process_urls(input_file, output_file):
     with open(output_file, 'w') as outfile:
         for result in results:
             outfile.write(result + '\n')
-    print ('L\'ensemble des URLs sont sauvegardé dans le fichier : output_urls.txt')
+    print(f"L'ensemble des URLs sont sauvegardé dans le fichier : {output_file}")
+
+    # Ouvrir le fichier avec Notepad
+    open_with_notepad(output_file)
+
+def open_with_notepad(file_path):
+    if os.path.isfile(file_path):
+        subprocess.Popen(['notepad.exe', file_path], shell=True)
+    else:
+        print(f"File {file_path} does not exist.")
 
 # Utilisation
 input_file = 'input_urls.txt'  # Nom du fichier contenant les URL à traiter
